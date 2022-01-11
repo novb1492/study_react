@@ -71,3 +71,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 회사 운영툴이 리액트여서 공부가 필요하다  
 대충봐도 vue보다 훨씬 어려워보인다  
+
+props=사용자  
+state=props값에 따라 내부에서 사용되는 데이터  
