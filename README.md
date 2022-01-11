@@ -74,3 +74,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 props=사용자  
 state=props값에 따라 내부에서 사용되는 데이터  
+(컴포넌트 내부에서 사용되는 것들)  
+
+props,state는 철저히 분리되어있어야한다  
+
