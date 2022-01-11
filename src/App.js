@@ -1,16 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react/cjs/react.development';
-class Subject extends Component{
-  render(){
-    return(
-      <div>
-        <h1>{this.props.title}</h1>
-
-      </div>
-    );
-  }
-}
+import Subject from './components/Subject.js';
 class Nav extends Component{
   render(){
     return(
