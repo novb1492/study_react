@@ -27,17 +27,13 @@ class App extends Component{
     }
     return (
       <div className="App">
-         <div>
-          <h1><a href="/" onClick={function(e){
-            console.log(e);
-            e.preventDefault();//리액트는 클릭이벤트시 이벤트값을 준다 태그의 기본 설정 행동을 막을 수있는코드
-            this.setState({
-              mode:'read'
-            })//state바꾸는법 bind로 this객체 넘겨주기
-          }.bind(this)}>{this.state.suject.title}</a></h1>
-          <hr></hr>
-        </div>
-        {/*<Subject title={this.state.suject.title}></Subject>*/}
+        <Subject title={this.state.suject.title} 
+        onChangePage={function(){
+          this.setState({
+            mode:'read'
+          })
+        }.bind(this)}>{/*이벤트를 걸어줘야한다*/}
+        </Subject>
         <Nav one={this.state.navs}></Nav>
         <Contents title={title} desc={desc}></Contents>
       </div>
