@@ -5,7 +5,7 @@ class Subject extends Component{
   render(){
     return(
       <div>
-        <h1>web</h1>
+        <h1>{this.props.title}</h1>
 
       </div>
     );
@@ -26,7 +26,7 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-        <Subject></Subject>
+        <Subject title="동적"></Subject>
         <Nav></Nav>
         hello
       </div>
